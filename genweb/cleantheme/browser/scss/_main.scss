@@ -6,111 +6,171 @@
 
 }
 
+body {
+    font-size: 14px !important;
+}
+
+
+// ****** portlets *****
+
 .portlet {
-    border: 0;
+    border: 0 !important;
     h2 {
-        padding: 10px 0;
+        font-size: 130% !important;
+        padding: 10px 0 !important;
     }
-}
-
-#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
-    border-radius: 0 !important;
-}
-
-#portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
-    background-color: #fff;
-}
-
-.navbar-inner {
-    background-color: #fff;
-    background-image: none;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    #menu-1 *:hover {
-        background-color: #fff !important;
-    }
-}
-
-#portal-header {
-    border-bottom: 0;
-}
-
-#portal-globalnav .nav > li > a {
-    border-right: 0;
 }
 
 .portlet-footer {
-    background-color: #fff;
-    text-align: left;
-    padding-left: 0px;
+    background-color: #fff !important;
+    text-align: left !important;
+    padding-left: 0px !important;
+    i {
+        margin-left: -1px;
+        margin-right: 5px;
+        position: inherit !important;
+    }
 }
 
-.portlet-ampliat .content-noticies {
-    padding: 0;
-}
+.portlet-ampliat {
+    .content-noticies {
+        padding: 0 !important;
+    }
 
-.portlet-ampliat h3 {
-    padding: 0;
-}
+    h3 {
+        padding: 0 !important;
+    }
 
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width: 1200px;
+    li > img {
+        margin-left: 0px !important;
+    }
 }
 
 .list-portlet {
-    padding: 0;
-}
-
-.pad {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .portlet-esdeveniments ul li {
     margin: 0;
 }
 
-.navbar .nav > li , .navbar .contentViews > li, .navbar .configlets > li, .navbar .formTabs > li  {
+.portlet-noticies.portlet-ampliat > div.row-fluid {
+    border-bottom: 1px solid #b2b2b2;
+}
 
-    &:first-child > a{
-        padding-left: 0;
+.noticies-full-2cols {
+    .noticies-full {
+        padding-left: 0 !important;
     }
 }
+
+.portlet-esdeveniments ul {
+    a {
+        border-left-width: 0px !important;
+    }
+    time {
+        left: 0 !important;
+    }
+}
+
+// ***** fi portlets *****
+
+
+#portal-header {
+    border-bottom: 0 !important;
+    &:not(.no-image) + #portal-globalnav .navbar-inner {
+        border-radius: 0 !important;
+    }
+}
+
+#portal-globalnav {
+    .navbar {
+        .nav > li, .contentViews > li, .configlets > li, .formTabs > li {
+            background-color: #fff !important;
+            > a {
+                font-size: 20px !important;
+            }
+            &:first-child > a{
+                padding-left: 0;
+            }
+        }
+        .nav > li > a {
+            border-right: 0 !important;
+        }
+    }
+
+    .navbar-inner {
+        background-color: #fff !important;
+        background-image: none !important;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        #menu-1 *:hover {
+            background-color: #fff !important;
+        }
+    }
+}
+
+
+
+.container{
+    width: 1200px !important;
+}
+
+
+.pad {
+    padding: 0 !important;
+}
+
+ul.unstyled {
+    padding-left: 0 !important;
+    li.multidate {
+        margin-left: 0 !important;
+    }
+}
+
 
 .header-image {
     background-size: cover;
 }
 
-.portlet-footer i {
-    margin-left: -1px;
-    margin-right: 5px;
-    position: inherit;
-}
 
 .large-icon {
-    margin-right: 0px;
+    margin-right: 0px !important;
 }
 
-.subnavbar .nav-list {
-    
-    a {
-        background-color: #fff !important;
-        background-image: none;
-        border-top: 0 !important;
+.subnavbar {
+    .nav-list {
+        a {
+            background-color: #fff !important;
+            background-image: none !important;
+            border-top: 0 !important;
+        }
+        .active ul a, .selected ul a {
+            border-right: 0px !important;
+            &.active {
+                background-color: #fff !important;
+            }
+        }
     }
+}
+
+.accordion-group {
+    border-radius: 0 !important;
 }
 
 .carousel {
     img {
         width: 1200px;
+        max-height: 250px;
     }
 }
 
 .carousel-inner {
-    border-width: 0px;
+    border-width: 0px !important;
 }
 .carousel-control {
-    border-width: 0px;
+    border-width: 0px !important;
 }
 
 .titol-1 {

@@ -5,135 +5,185 @@
 }
 
 /* line 9, ../scss/_main.scss */
-.portlet {
-  border: 0;
-}
-/* line 11, ../scss/_main.scss */
-.portlet h2 {
-  padding: 10px 0;
+body {
+  font-size: 14px !important;
 }
 
 /* line 16, ../scss/_main.scss */
-#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
-  border-radius: 0 !important;
+.portlet {
+  border: 0 !important;
 }
-
-/* line 20, ../scss/_main.scss */
-#portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
-  background-color: #fff;
+/* line 18, ../scss/_main.scss */
+.portlet h2 {
+  font-size: 130% !important;
+  padding: 10px 0 !important;
 }
 
 /* line 24, ../scss/_main.scss */
-.navbar-inner {
-  background-color: #fff;
-  background-image: none;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-}
-/* line 30, ../scss/_main.scss */
-.navbar-inner #menu-1 *:hover {
-  background-color: #fff !important;
-}
-
-/* line 35, ../scss/_main.scss */
-#portal-header {
-  border-bottom: 0;
-}
-
-/* line 39, ../scss/_main.scss */
-#portal-globalnav .nav > li > a {
-  border-right: 0;
-}
-
-/* line 43, ../scss/_main.scss */
 .portlet-footer {
-  background-color: #fff;
-  text-align: left;
-  padding-left: 0px;
+  background-color: #fff !important;
+  text-align: left !important;
+  padding-left: 0px !important;
+}
+/* line 28, ../scss/_main.scss */
+.portlet-footer i {
+  margin-left: -1px;
+  margin-right: 5px;
+  position: inherit !important;
+}
+
+/* line 36, ../scss/_main.scss */
+.portlet-ampliat .content-noticies {
+  padding: 0 !important;
+}
+/* line 40, ../scss/_main.scss */
+.portlet-ampliat h3 {
+  padding: 0 !important;
+}
+/* line 44, ../scss/_main.scss */
+.portlet-ampliat li > img {
+  margin-left: 0px !important;
 }
 
 /* line 49, ../scss/_main.scss */
-.portlet-ampliat .content-noticies {
-  padding: 0;
+.list-portlet {
+  padding: 0 !important;
 }
 
 /* line 53, ../scss/_main.scss */
-.portlet-ampliat h3 {
-  padding: 0;
-}
-
-/* line 57, ../scss/_main.scss */
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  width: 1200px;
-}
-
-/* line 61, ../scss/_main.scss */
-.list-portlet {
-  padding: 0;
-}
-
-/* line 65, ../scss/_main.scss */
-.pad {
-  padding: 0;
-}
-
-/* line 69, ../scss/_main.scss */
 .portlet-esdeveniments ul li {
   margin: 0;
 }
 
-/* line 75, ../scss/_main.scss */
-.navbar .nav > li:first-child > a, .navbar .contentViews > li:first-child > a, .navbar .configlets > li:first-child > a, .navbar .formTabs > li:first-child > a {
-  padding-left: 0;
+/* line 57, ../scss/_main.scss */
+.portlet-noticies.portlet-ampliat > div.row-fluid {
+  border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 80, ../scss/_main.scss */
+/* line 62, ../scss/_main.scss */
+.noticies-full-2cols .noticies-full {
+  padding-left: 0 !important;
+}
+
+/* line 68, ../scss/_main.scss */
+.portlet-esdeveniments ul a {
+  border-left-width: 0px !important;
+}
+/* line 71, ../scss/_main.scss */
+.portlet-esdeveniments ul time {
+  left: 0 !important;
+}
+
+/* line 79, ../scss/_main.scss */
+#portal-header {
+  border-bottom: 0 !important;
+}
+/* line 81, ../scss/_main.scss */
+#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
+  border-radius: 0 !important;
+}
+
+/* line 88, ../scss/_main.scss */
+#portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
+  background-color: #fff !important;
+}
+/* line 90, ../scss/_main.scss */
+#portal-globalnav .navbar .nav > li > a, #portal-globalnav .navbar .contentViews > li > a, #portal-globalnav .navbar .configlets > li > a, #portal-globalnav .navbar .formTabs > li > a {
+  font-size: 20px !important;
+}
+/* line 93, ../scss/_main.scss */
+#portal-globalnav .navbar .nav > li:first-child > a, #portal-globalnav .navbar .contentViews > li:first-child > a, #portal-globalnav .navbar .configlets > li:first-child > a, #portal-globalnav .navbar .formTabs > li:first-child > a {
+  padding-left: 0;
+}
+/* line 97, ../scss/_main.scss */
+#portal-globalnav .navbar .nav > li > a {
+  border-right: 0 !important;
+}
+/* line 102, ../scss/_main.scss */
+#portal-globalnav .navbar-inner {
+  background-color: #fff !important;
+  background-image: none !important;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+/* line 108, ../scss/_main.scss */
+#portal-globalnav .navbar-inner #menu-1 *:hover {
+  background-color: #fff !important;
+}
+
+/* line 116, ../scss/_main.scss */
+.container {
+  width: 1200px !important;
+}
+
+/* line 121, ../scss/_main.scss */
+.pad {
+  padding: 0 !important;
+}
+
+/* line 125, ../scss/_main.scss */
+ul.unstyled {
+  padding-left: 0 !important;
+}
+/* line 127, ../scss/_main.scss */
+ul.unstyled li.multidate {
+  margin-left: 0 !important;
+}
+
+/* line 133, ../scss/_main.scss */
 .header-image {
   background-size: cover;
 }
 
-/* line 84, ../scss/_main.scss */
-.portlet-footer i {
-  margin-left: -1px;
-  margin-right: 5px;
-  position: inherit;
-}
-
-/* line 90, ../scss/_main.scss */
+/* line 138, ../scss/_main.scss */
 .large-icon {
-  margin-right: 0px;
+  margin-right: 0px !important;
 }
 
-/* line 96, ../scss/_main.scss */
+/* line 144, ../scss/_main.scss */
 .subnavbar .nav-list a {
   background-color: #fff !important;
-  background-image: none;
+  background-image: none !important;
   border-top: 0 !important;
 }
+/* line 149, ../scss/_main.scss */
+.subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a {
+  border-right: 0px !important;
+}
+/* line 151, ../scss/_main.scss */
+.subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active {
+  background-color: #fff !important;
+}
 
-/* line 104, ../scss/_main.scss */
+/* line 158, ../scss/_main.scss */
+.accordion-group {
+  border-radius: 0 !important;
+}
+
+/* line 163, ../scss/_main.scss */
 .carousel img {
   width: 1200px;
+  max-height: 250px;
 }
 
-/* line 109, ../scss/_main.scss */
+/* line 169, ../scss/_main.scss */
 .carousel-inner {
-  border-width: 0px;
+  border-width: 0px !important;
 }
 
-/* line 112, ../scss/_main.scss */
+/* line 172, ../scss/_main.scss */
 .carousel-control {
-  border-width: 0px;
+  border-width: 0px !important;
 }
 
-/* line 116, ../scss/_main.scss */
+/* line 176, ../scss/_main.scss */
 .titol-1 {
   font-size: 50px;
   font-weight: bold;
 }
 
-/* line 121, ../scss/_main.scss */
+/* line 181, ../scss/_main.scss */
 .titol-2 {
   font-size: 20px;
   line-height: 20px;
