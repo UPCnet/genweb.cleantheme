@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+#post-list {
+    list-style: none;
+    margin-left: 0;
+	li {
+	    border-bottom: 1px solid #ddd;
+	    list-style: none;
+	    margin-top: 10px;
+	}
+	.row {
+	    margin-left: 0;
+	}
+}
+
+
+.post-title, .post-author, .post-comments {
+    font-size: 120%;
+    margin-bottom: 0px !important;
+}
+
+.post-author {
+    text-align: right;
+}
+
+.post-list-portrait {
+	margin-bottom: 5px;
+	margin-right: 5px;
+	max-width: 50px;
+	@include border-radius(5px);
+}
+
+.post-comments {
+	text-align: center;
+}
+
+// post view
+body.portaltype-genweb-simpleforum-post { 
+	div#portal-columns{
+	    border: 0;
+	}
+
+	.reply-to-comment-button {
+	    display: none !important;
+	}
+
+	.commentDate {
+		float: none;
+	    padding-top: 0;
+	}
+
+	div#commenting {
+		margin-top: 5%;
+	}
+
+	div.commentBody {
+		border-width: 0;
+	}
+
+	div.discussion {
+		min-height: 100px;
+	}
+
+	div.comment {
+		border: 1px solid #ccc !important;
+		margin-top: 2%;
+		padding: 1% !important;
+	}
+
+	div#viewlet-below-content > a.btn.btn-small,
+	ul#contentActionMenus	 {
+		display: none;
+	}
+	// per a usuaris no manager amaguem barra accions
+	&:not(.userrole-manager) {
+		div#edit-bar {
+			display: none;
+			height: 0;
+		}
+		div#portal-column-content {
+			margin-top: -15px;
+		}
+	}
+
+	a.previous {
+		border-left-width: 1px;
+	}
+
+	div.discussion .comment.replyTreeLevel0 {
+		background-color: #eee;
+	}
+
+	div.discussion {
+		div.commentImage {
+			height: auto;
+			margin-bottom: 10px;
+			position: relative;
+		}
+		div.documentByLine {
+			margin-left: 0px;			
+		}
+		div.commentBody {
+			clear: both;
+			margin-left: 0px;
+			margin-top: 10px;
+		}
+	}
+} 
+
+// forum & post edit
+body.portaltype-genweb-simpleforum-post,
+body.template-genweb-simpleforum-post, 
+body.portaltype-genweb-simpleforum-forum, 
+body.template-edit.portaltype-genweb-simpleforum-forum {
+	#form-widgets-title {
+		width: 99%;
+	}
+}
+
+// forum view
+body.portaltype-genweb-simpleforum-forum {
+
+	// amaga menús que no volem que funcionin: traducció, copy&paste, vista
+	a { 
+		&#plone-contentmenu-actions,
+		&#plone-contentmenu-multilingual,
+		&#plone-contentmenu-display {
+			display: none;
+		}
+	}
+
+	// alçada barra eines
+	ul#contentActionMenus li.dropdown {
+		line-height: 34px;
+	}
+
+}
+
+
+// icons
+dt.contenttype-genweb-simpleforum-forum:before, 
+i.icon-genweb-simpleforum-forum,
+#listing-table a.contenttype-genweb-simpleforum-forum:before, 
+.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-forum:before {
+	background-position: -96px -96px !important;
+}
+
+dt.contenttype-genweb-simpleforum-post:before, 
+i.icon-genweb-simpleforum-post,
+#listing-table a.contenttype-genweb-simpleforum-post:before, 
+.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-post:before {
+	background-position: -24px -24px !important;
+}

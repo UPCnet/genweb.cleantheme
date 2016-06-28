@@ -1,0 +1,144 @@
+/* line 3, ../scss/_main.scss */
+#post-list {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 6, ../scss/_main.scss */
+#post-list li {
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin-top: 10px;
+}
+/* line 11, ../scss/_main.scss */
+#post-list .row {
+  margin-left: 0;
+}
+
+/* line 17, ../scss/_main.scss */
+.post-title, .post-author, .post-comments {
+  font-size: 120%;
+  margin-bottom: 0px !important;
+}
+
+/* line 22, ../scss/_main.scss */
+.post-author {
+  text-align: right;
+}
+
+/* line 26, ../scss/_main.scss */
+.post-list-portrait {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  max-width: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 33, ../scss/_main.scss */
+.post-comments {
+  text-align: center;
+}
+
+/* line 39, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div#portal-columns {
+  border: 0;
+}
+/* line 43, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post .reply-to-comment-button {
+  display: none !important;
+}
+/* line 47, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post .commentDate {
+  float: none;
+  padding-top: 0;
+}
+/* line 52, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div#commenting {
+  margin-top: 5%;
+}
+/* line 56, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.commentBody {
+  border-width: 0;
+}
+/* line 60, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.discussion {
+  min-height: 100px;
+}
+/* line 64, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.comment {
+  border: 1px solid #ccc !important;
+  margin-top: 2%;
+  padding: 1% !important;
+}
+/* line 70, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div#viewlet-below-content > a.btn.btn-small,
+body.portaltype-genweb-simpleforum-post ul#contentActionMenus {
+  display: none;
+}
+/* line 76, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post:not(.userrole-manager) div#edit-bar {
+  display: none;
+  height: 0;
+}
+/* line 80, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post:not(.userrole-manager) div#portal-column-content {
+  margin-top: -15px;
+}
+/* line 85, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post a.previous {
+  border-left-width: 1px;
+}
+/* line 89, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.discussion .comment.replyTreeLevel0 {
+  background-color: #eee;
+}
+/* line 94, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.discussion div.commentImage {
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 99, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.discussion div.documentByLine {
+  margin-left: 0px;
+}
+/* line 102, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post div.discussion div.commentBody {
+  clear: both;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+/* line 115, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-post #form-widgets-title,
+body.template-genweb-simpleforum-post #form-widgets-title,
+body.portaltype-genweb-simpleforum-forum #form-widgets-title,
+body.template-edit.portaltype-genweb-simpleforum-forum #form-widgets-title {
+  width: 99%;
+}
+
+/* line 125, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-forum a#plone-contentmenu-actions, body.portaltype-genweb-simpleforum-forum a#plone-contentmenu-multilingual, body.portaltype-genweb-simpleforum-forum a#plone-contentmenu-display {
+  display: none;
+}
+/* line 133, ../scss/_main.scss */
+body.portaltype-genweb-simpleforum-forum ul#contentActionMenus li.dropdown {
+  line-height: 34px;
+}
+
+/* line 141, ../scss/_main.scss */
+dt.contenttype-genweb-simpleforum-forum:before,
+i.icon-genweb-simpleforum-forum,
+#listing-table a.contenttype-genweb-simpleforum-forum:before,
+.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-forum:before {
+  background-position: -96px -96px !important;
+}
+
+/* line 148, ../scss/_main.scss */
+dt.contenttype-genweb-simpleforum-post:before,
+i.icon-genweb-simpleforum-post,
+#listing-table a.contenttype-genweb-simpleforum-post:before,
+.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-post:before {
+  background-position: -24px -24px !important;
+}
