@@ -14,4 +14,10 @@
       directory="static"
       />
 
+    <!-- Style -->
+    <browser:resourceDirectory
+      name="genweb.cleantheme.stylesheets"
+      directory="stylesheets"
+      />
+
 </configure>

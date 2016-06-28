@@ -1,153 +1,130 @@
 @charset "UTF-8";
 
-#post-list {
-    list-style: none;
-    margin-left: 0;
-	li {
-	    border-bottom: 1px solid #ddd;
-	    list-style: none;
-	    margin-top: 10px;
-	}
-	.row {
-	    margin-left: 0;
-	}
-}
-
-
-.post-title, .post-author, .post-comments {
-    font-size: 120%;
-    margin-bottom: 0px !important;
-}
-
-.post-author {
-    text-align: right;
-}
-
-.post-list-portrait {
-	margin-bottom: 5px;
-	margin-right: 5px;
-	max-width: 50px;
-	@include border-radius(5px);
-}
-
-.post-comments {
-	text-align: center;
-}
-
-// post view
-body.portaltype-genweb-simpleforum-post { 
-	div#portal-columns{
-	    border: 0;
-	}
-
-	.reply-to-comment-button {
-	    display: none !important;
-	}
-
-	.commentDate {
-		float: none;
-	    padding-top: 0;
-	}
-
-	div#commenting {
-		margin-top: 5%;
-	}
-
-	div.commentBody {
-		border-width: 0;
-	}
-
-	div.discussion {
-		min-height: 100px;
-	}
-
-	div.comment {
-		border: 1px solid #ccc !important;
-		margin-top: 2%;
-		padding: 1% !important;
-	}
-
-	div#viewlet-below-content > a.btn.btn-small,
-	ul#contentActionMenus	 {
-		display: none;
-	}
-	// per a usuaris no manager amaguem barra accions
-	&:not(.userrole-manager) {
-		div#edit-bar {
-			display: none;
-			height: 0;
-		}
-		div#portal-column-content {
-			margin-top: -15px;
-		}
-	}
-
-	a.previous {
-		border-left-width: 1px;
-	}
-
-	div.discussion .comment.replyTreeLevel0 {
-		background-color: #eee;
-	}
-
-	div.discussion {
-		div.commentImage {
-			height: auto;
-			margin-bottom: 10px;
-			position: relative;
-		}
-		div.documentByLine {
-			margin-left: 0px;			
-		}
-		div.commentBody {
-			clear: both;
-			margin-left: 0px;
-			margin-top: 10px;
-		}
-	}
-} 
-
-// forum & post edit
-body.portaltype-genweb-simpleforum-post,
-body.template-genweb-simpleforum-post, 
-body.portaltype-genweb-simpleforum-forum, 
-body.template-edit.portaltype-genweb-simpleforum-forum {
-	#form-widgets-title {
-		width: 99%;
-	}
-}
-
-// forum view
-body.portaltype-genweb-simpleforum-forum {
-
-	// amaga menús que no volem que funcionin: traducció, copy&paste, vista
-	a { 
-		&#plone-contentmenu-actions,
-		&#plone-contentmenu-multilingual,
-		&#plone-contentmenu-display {
-			display: none;
-		}
-	}
-
-	// alçada barra eines
-	ul#contentActionMenus li.dropdown {
-		line-height: 34px;
-	}
+* {
+    border-radius: 0 !important;
+    box-shadow: 0 0 0 0 !important;
 
 }
 
-
-// icons
-dt.contenttype-genweb-simpleforum-forum:before, 
-i.icon-genweb-simpleforum-forum,
-#listing-table a.contenttype-genweb-simpleforum-forum:before, 
-.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-forum:before {
-	background-position: -96px -96px !important;
+.portlet {
+    border: 0;
+    h2 {
+        padding: 10px 0;
+    }
 }
 
-dt.contenttype-genweb-simpleforum-post:before, 
-i.icon-genweb-simpleforum-post,
-#listing-table a.contenttype-genweb-simpleforum-post:before, 
-.template-folder_tabular_view .listing a.contenttype-genweb-simpleforum-post:before {
-	background-position: -24px -24px !important;
+#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
+    border-radius: 0 !important;
+}
+
+#portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
+    background-color: #fff;
+}
+
+.navbar-inner {
+    background-color: #fff;
+    background-image: none;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    #menu-1 *:hover {
+        background-color: #fff !important;
+    }
+}
+
+#portal-header {
+    border-bottom: 0;
+}
+
+#portal-globalnav .nav > li > a {
+    border-right: 0;
+}
+
+.portlet-footer {
+    background-color: #fff;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.portlet-ampliat .content-noticies {
+    padding: 0;
+}
+
+.portlet-ampliat h3 {
+    padding: 0;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1200px;
+}
+
+.list-portlet {
+    padding: 0;
+}
+
+.pad {
+    padding: 0;
+}
+
+.portlet-esdeveniments ul li {
+    margin: 0;
+}
+
+.navbar .nav > li , .navbar .contentViews > li, .navbar .configlets > li, .navbar .formTabs > li  {
+
+    &:first-child > a{
+        padding-left: 0;
+    }
+}
+
+.header-image {
+    background-size: cover;
+}
+
+.portlet-footer i {
+    margin-left: -1px;
+    margin-right: 5px;
+    position: inherit;
+}
+
+.large-icon {
+    margin-right: 0px;
+}
+
+.subnavbar .nav-list {
+    
+    a {
+        background-color: #fff !important;
+        background-image: none;
+        border-top: 0 !important;
+    }
+}
+
+.carousel {
+    img {
+        width: 1200px;
+    }
+}
+
+.carousel-inner {
+    border-width: 0px;
+}
+.carousel-control {
+    border-width: 0px;
+}
+
+.titol-1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.titol-2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    display: table-cell;
+    width:300px;
+    margin-left: 5px;
+    left: 10px;
+    position: relative;
 }

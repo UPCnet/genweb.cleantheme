@@ -7,7 +7,7 @@ version = '0.1'
 README = open("README.rst").read()
 HISTORY = open(os.path.join("docs", "HISTORY.rst")).read()
 
-setup(name='genweb.cleantheme',
+setup(name='Genweb Clean Theme',
       version=version,
       description="genweb clean theme",
       long_description=README + "\n" + HISTORY,
