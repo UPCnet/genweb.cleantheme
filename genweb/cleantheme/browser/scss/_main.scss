@@ -61,6 +61,7 @@ body {
 .noticies-full-2cols {
     .noticies-full {
         padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
@@ -88,10 +89,10 @@ body {
         .nav > li, .contentViews > li, .configlets > li, .formTabs > li {
             background-color: #fff !important;
             > a {
-                font-size: 20px !important;
+                font-size: 18px !important;
             }
             &:first-child > a{
-                padding-left: 0;
+                //padding-left: 0;
             }
         }
         .nav > li > a {
@@ -102,11 +103,12 @@ body {
     .navbar-inner {
         background-color: #fff !important;
         background-image: none !important;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        #menu-1 *:hover {
-            background-color: #fff !important;
+        border: 0 !important;
+        #menu-1 {
+            margin-top: 5px;
+            *:hover {
+                background-color: #fff !important;
+            }
         }
     }
 }
@@ -114,8 +116,11 @@ body {
 
 
 .container{
-    width: 1200px !important;
+    max-width: 1200px !important;
+    width: 98% !important;
 }
+
+
 
 
 .pad {
@@ -162,7 +167,6 @@ ul.unstyled {
 .carousel {
     img {
         width: 1200px;
-        max-height: 250px;
     }
 }
 
@@ -173,18 +177,84 @@ ul.unstyled {
     border-width: 0px !important;
 }
 
-.titol-1 {
-    font-size: 50px;
+.titol-sigles {
+    font-size: 45px;
+    //line-height: 45px;
+    padding-right: 10px !important;
+}
+
+.titol-descripcio {
     font-weight: bold;
 }
 
-.titol-2 {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    display: table-cell;
-    width:300px;
-    margin-left: 5px;
-    left: 10px;
+.titol-sigles + .titol-descripcio {
     position: relative;
+    bottom: -6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .titol-sigles + .titol-descripcio {
+        display:none;
+    }
+    #portal-globalnav .navbar-inner {
+        border-top: 3px solid #666;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) {
+    // menú superior, si té més de 5 opcions ocupen tot espai centrades, sino les opcions van alineades a l'esquerra
+    @mixin space-out($min, $max) {
+        @for $i from $min through $max {
+            &:first-child:nth-last-child(#{$i}),
+            &:first-child:nth-last-child(#{$i}) ~ li {
+                flex-grow: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    @mixin flexbox() {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    @mixin flex-flow($values) {
+      -webkit-box-flex-flow: $values;
+      -moz-box-flex-flow:  $values;
+      -webkit-flex-flow:  $values;
+      -ms-flex-flow:  $values;
+      flex-flow:  $values;
+    }
+
+    #menu-1 ul {
+        border-top: 3px solid #666;
+        border-bottom: 3px solid #666;
+        display: flex !important;
+            @include flexbox();
+            //@include flex-flow(row);
+            width: 100%;
+        li {
+            @include space-out(6, 10);
+            border-bottom: 3px solid #007bc0; // TODO colors a partir de variables
+            margin-bottom: -3px;
+            a {
+                border-bottom-width: 0 !important;
+            }
+            &.active {
+                border-bottom-color: #004a74;// TODO colors a partir de variables
+            }
+        }
+    }
+}
+
+
+// menú lateral
+
+#portlet-navigation-tree {
+    border-width: 0px 0 1px 0;
 }
