@@ -1,0 +1,2 @@
+# genweb.cleantheme
+Clean theme
