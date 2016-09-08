@@ -204,7 +204,7 @@ ul.unstyled {
 
 
 @media only screen and (min-width: 769px) {
-    // menú superior, si té més de 5 opcions ocupen tot espai centrades, sino les opcions van alineades a l'esquerra
+    // menú superior, si té més de 5 opcions ocupen tot espai centrades i fins màxim 11, sino les opcions van alineades a l'esquerra
     @mixin space-out($min, $max) {
         @for $i from $min through $max {
             &:first-child:nth-last-child(#{$i}),
@@ -239,7 +239,7 @@ ul.unstyled {
             //@include flex-flow(row);
             width: 100%;
         li {
-            @include space-out(6, 10);
+            @include space-out(6, 11);
             border-bottom: 3px solid #007bc0; // TODO colors a partir de variables
             margin-bottom: -3px;
             a {

@@ -247,6 +247,11 @@ ul.unstyled li.multidate {
     flex-grow: 1;
     text-align: center;
   }
+  /* line 210, ../scss/_main.scss */
+  #menu-1 ul li:first-child:nth-last-child(11), #menu-1 ul li:first-child:nth-last-child(11) ~ li {
+    flex-grow: 1;
+    text-align: center;
+  }
   /* line 245, ../scss/_main.scss */
   #menu-1 ul li a {
     border-bottom-width: 0 !important;
