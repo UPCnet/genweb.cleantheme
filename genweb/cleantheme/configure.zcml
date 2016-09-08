@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
@@ -27,5 +28,13 @@
         description="Extension profile for genweb.cleantheme."
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+
+    <include package="z3c.jbot" file="meta.zcml" />    
+    <grok:grok package=".browser" />
+    <include package=".browser" />
+    <browser:jbot
+      directory="templates"
+      layer=".interfaces.IGenwebCleanthemeLayer"
+    />
 
 </configure>
