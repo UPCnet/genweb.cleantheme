@@ -7,3 +7,6 @@ include
 lib
 parts
 var
+
+browser/.sass-cache
+*.scssc
