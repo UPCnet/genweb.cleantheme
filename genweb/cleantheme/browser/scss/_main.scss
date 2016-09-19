@@ -231,7 +231,7 @@ ul.unstyled {
       flex-flow:  $values;
     }
 
-    #menu-1 ul {
+    #menu-1 ul { 
         border-top: 3px solid #666;
         border-bottom: 3px solid #666;
         display: flex !important;
@@ -244,6 +244,8 @@ ul.unstyled {
             margin-bottom: -3px;
             a {
                 border-bottom-width: 0 !important;
+                padding-left: 2% !important;
+                padding-right: 2% !important;
             }
             &.active {
                 border-bottom-color: #004a74;// TODO colors a partir de variables
