@@ -83,129 +83,129 @@ body {
 #portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
   border-radius: 0 !important;
 }
+/* line 85, ../scss/_main.scss */
+#portal-header .titol-espai h1 {
+  margin-bottom: 5px;
+}
 
-/* line 89, ../scss/_main.scss */
+/* line 92, ../scss/_main.scss */
 #portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
   background-color: #fff !important;
 }
-/* line 91, ../scss/_main.scss */
+/* line 94, ../scss/_main.scss */
 #portal-globalnav .navbar .nav > li > a, #portal-globalnav .navbar .contentViews > li > a, #portal-globalnav .navbar .configlets > li > a, #portal-globalnav .navbar .formTabs > li > a {
   font-size: 18px !important;
 }
-/* line 98, ../scss/_main.scss */
+/* line 101, ../scss/_main.scss */
 #portal-globalnav .navbar .nav > li > a {
   border-right: 0 !important;
 }
-/* line 103, ../scss/_main.scss */
+/* line 106, ../scss/_main.scss */
 #portal-globalnav .navbar-inner {
   background-color: #fff !important;
   background-image: none !important;
   border: 0 !important;
 }
-/* line 107, ../scss/_main.scss */
-#portal-globalnav .navbar-inner #menu-1 {
-  margin-top: 5px;
-}
-/* line 109, ../scss/_main.scss */
+/* line 111, ../scss/_main.scss */
 #portal-globalnav .navbar-inner #menu-1 *:hover {
   background-color: #fff !important;
 }
 
-/* line 118, ../scss/_main.scss */
+/* line 121, ../scss/_main.scss */
 .container {
   max-width: 1200px !important;
   width: 98% !important;
 }
 
-/* line 126, ../scss/_main.scss */
+/* line 129, ../scss/_main.scss */
 .pad {
   padding: 0 !important;
 }
 
-/* line 130, ../scss/_main.scss */
+/* line 133, ../scss/_main.scss */
 ul.unstyled {
   padding-left: 0 !important;
 }
-/* line 132, ../scss/_main.scss */
+/* line 135, ../scss/_main.scss */
 ul.unstyled li.multidate {
   margin-left: 0 !important;
 }
 
-/* line 138, ../scss/_main.scss */
+/* line 141, ../scss/_main.scss */
 .header-image {
   background-size: cover;
 }
 
-/* line 143, ../scss/_main.scss */
+/* line 146, ../scss/_main.scss */
 .large-icon {
   margin-right: 0px !important;
 }
 
-/* line 149, ../scss/_main.scss */
+/* line 152, ../scss/_main.scss */
 .subnavbar .nav-list a {
   background-color: #fff !important;
   background-image: none !important;
   border-top: 0 !important;
 }
-/* line 154, ../scss/_main.scss */
+/* line 157, ../scss/_main.scss */
 .subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a {
   border-right: 0px !important;
 }
-/* line 156, ../scss/_main.scss */
+/* line 159, ../scss/_main.scss */
 .subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active {
   background-color: #fff !important;
 }
 
-/* line 163, ../scss/_main.scss */
+/* line 166, ../scss/_main.scss */
 .accordion-group {
   border-radius: 0 !important;
 }
 
-/* line 168, ../scss/_main.scss */
+/* line 171, ../scss/_main.scss */
 .carousel img {
   width: 1200px;
 }
 
-/* line 173, ../scss/_main.scss */
+/* line 176, ../scss/_main.scss */
 .carousel-inner {
   border-width: 0px !important;
 }
 
-/* line 176, ../scss/_main.scss */
+/* line 179, ../scss/_main.scss */
 .carousel-control {
   border-width: 0px !important;
 }
 
-/* line 180, ../scss/_main.scss */
+/* line 183, ../scss/_main.scss */
 .titol-sigles {
   font-size: 45px;
   padding-right: 10px !important;
 }
 
-/* line 186, ../scss/_main.scss */
+/* line 189, ../scss/_main.scss */
 .titol-descripcio {
   font-weight: bold;
 }
 
-/* line 190, ../scss/_main.scss */
+/* line 193, ../scss/_main.scss */
 .titol-sigles + .titol-descripcio {
   position: relative;
   bottom: -6px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 196, ../scss/_main.scss */
+  /* line 199, ../scss/_main.scss */
   .titol-sigles + .titol-descripcio {
     display: none;
   }
 
-  /* line 199, ../scss/_main.scss */
+  /* line 202, ../scss/_main.scss */
   #portal-globalnav .navbar-inner {
     border-top: 3px solid #666;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 234, ../scss/_main.scss */
+  /* line 237, ../scss/_main.scss */
   #menu-1 ul {
     border-top: 3px solid #666;
     border-bottom: 3px solid #666;
@@ -217,51 +217,53 @@ ul.unstyled li.multidate {
     display: flex;
     width: 100%;
   }
-  /* line 241, ../scss/_main.scss */
+  /* line 244, ../scss/_main.scss */
   #menu-1 ul li {
     border-bottom: 3px solid #007bc0;
     margin-bottom: -3px;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(6), #menu-1 ul li:first-child:nth-last-child(6) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(7), #menu-1 ul li:first-child:nth-last-child(7) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(8), #menu-1 ul li:first-child:nth-last-child(8) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(9), #menu-1 ul li:first-child:nth-last-child(9) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(10), #menu-1 ul li:first-child:nth-last-child(10) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 210, ../scss/_main.scss */
+  /* line 213, ../scss/_main.scss */
   #menu-1 ul li:first-child:nth-last-child(11), #menu-1 ul li:first-child:nth-last-child(11) ~ li {
     flex-grow: 1;
     text-align: center;
   }
-  /* line 245, ../scss/_main.scss */
+  /* line 248, ../scss/_main.scss */
   #menu-1 ul li a {
     border-bottom-width: 0 !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
   }
-  /* line 248, ../scss/_main.scss */
+  /* line 253, ../scss/_main.scss */
   #menu-1 ul li.active {
     border-bottom-color: #004a74;
   }
 }
-/* line 258, ../scss/_main.scss */
+/* line 263, ../scss/_main.scss */
 #portlet-navigation-tree {
   border-width: 0px 0 1px 0;
 }

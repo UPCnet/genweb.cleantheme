@@ -82,6 +82,9 @@ body {
     &:not(.no-image) + #portal-globalnav .navbar-inner {
         border-radius: 0 !important;
     }
+    .titol-espai h1 {
+        margin-bottom: 5px;
+    }
 }
 
 #portal-globalnav {
@@ -105,11 +108,11 @@ body {
         background-image: none !important;
         border: 0 !important;
         #menu-1 {
-            margin-top: 5px;
             *:hover {
                 background-color: #fff !important;
             }
         }
+
     }
 }
 
