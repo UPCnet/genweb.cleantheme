@@ -29,9 +29,7 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
-    <include package="z3c.jbot" file="meta.zcml" />    
-    <grok:grok package=".browser" />
-    <include package=".browser" />
+    <include package="z3c.jbot" file="meta.zcml" />
     <browser:jbot
       directory="templates"
       layer=".interfaces.IGenwebCleanthemeLayer"
