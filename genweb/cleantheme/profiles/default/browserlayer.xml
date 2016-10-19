@@ -2,6 +2,6 @@
 <layers>
   <layer
     name="genweb.cleantheme"
-    interface="genweb.cleantheme.interfaces.IGenwebCleanthemeLayer"
+    interface="genweb.cleantheme.browser.interfaces.IGenwebCleantheme"
   />
 </layers>

@@ -1,5 +1,5 @@
-from plone.theme.interfaces import IDefaultPloneLayer
+from genweb.upc.browser.interfaces import IGenwebUPC
 
 
-class IGenwebCleantheme(IDefaultPloneLayer):
+class IGenwebCleantheme(IGenwebUPC):
     """Marker interface that defines a Zope browser layer."""

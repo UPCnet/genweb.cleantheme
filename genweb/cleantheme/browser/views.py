@@ -38,7 +38,7 @@ class dynamicCSS(grok.View):
     def compile_scss(self, **kwargs):
         genwebcleathemeegg = pkg_resources.get_distribution('genweb.cleantheme')
 
-        scssfile = open('{}/genweb/theme/scss/_dynamic.scss'.format(genwebcleathemeegg.location))
+        scssfile = open('{}/genweb/cleantheme/browser/scss/_dynamic.scss'.format(genwebcleathemeegg.location))
 
         settings = dict(especific1=self.especific1,
                         especific2=self.especific2)
@@ -49,10 +49,6 @@ class dynamicCSS(grok.View):
         $genwebTitles: {especific2};
 
         """.format(**settings)
-
-        scss.config.LOAD_PATHS = [
-            '{}/genweb/cleantheme/bootstrap/scss/compass_twitter_bootstrap'.format(genwebcleathemeegg.location)
-            ]
 
         css = Scss(scss_opts={
                    'compress': False,
