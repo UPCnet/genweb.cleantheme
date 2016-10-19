@@ -173,22 +173,17 @@ ul.unstyled li.multidate {
   margin: 0;
 }
 
-/* line 44, ../scss/_portlets.scss */
-.portlet-noticies.portlet-ampliat > div.row-fluid {
-  border-bottom: 1px solid #b2b2b2;
-}
-
-/* line 49, ../scss/_portlets.scss */
+/* line 45, ../scss/_portlets.scss */
 .noticies-full-2cols .noticies-full {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* line 56, ../scss/_portlets.scss */
+/* line 52, ../scss/_portlets.scss */
 .portlet-esdeveniments ul a {
   border-left-width: 0px !important;
 }
-/* line 59, ../scss/_portlets.scss */
+/* line 55, ../scss/_portlets.scss */
 .portlet-esdeveniments ul time {
   left: 0 !important;
 }
@@ -202,8 +197,8 @@ ul.unstyled li.multidate {
 @media only screen and (min-width: 769px) {
   /* line 32, ../scss/desktop/_nav.scss */
   #menu-1 ul {
-    border-top: 3px solid #666;
-    border-bottom: 3px solid #666;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
     display: flex !important;
     display: -webkit-box;
     display: -moz-box;
