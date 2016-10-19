@@ -1,0 +1,46 @@
+// menú superior, si té més de 5 opcions ocupen tot espai centrades i fins màxim 11, sino les opcions van alineades a l'esquerra
+@mixin space-out($min, $max) {
+    @for $i from $min through $max {
+        &:first-child:nth-last-child(#{$i}),
+        &:first-child:nth-last-child(#{$i}) ~ li {
+            flex-grow: 1;
+            text-align: center;
+            a {
+                padding-left: 2% !important;
+                padding-right: 2% !important;
+            }
+        }
+    }
+}
+
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-flow($values) {
+  -webkit-box-flex-flow: $values;
+  -moz-box-flex-flow:  $values;
+  -webkit-flex-flow:  $values;
+  -ms-flex-flow:  $values;
+  flex-flow:  $values;
+}
+
+#menu-1 ul { 
+    border-top: 3px solid #666;
+    border-bottom: 3px solid #666;
+    display: flex !important;
+    @include flexbox();
+    width: 100%;
+    li {
+        @include space-out(6, 11);
+        border-bottom: 3px solid; // TODO colors a partir de variables
+        margin-bottom: -3px;
+        a {
+            border-bottom-width: 0 !important;
+        }
+    }
+}

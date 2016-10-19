@@ -1,81 +1,11 @@
-@charset "UTF-8";
-
 * {
     border-radius: 0 !important;
     box-shadow: 0 0 0 0 !important;
-
 }
 
 body {
     font-size: 14px !important;
 }
-
-
-// ****** portlets *****
-
-.portlet {
-    border: 0 !important;
-    h2 {
-        font-size: 130% !important;
-        padding: 10px 0 !important;
-    }
-}
-
-.portlet-footer {
-    background-color: #fff !important;
-    text-align: left !important;
-    padding-left: 0px !important;
-    i {
-        margin-left: -1px;
-        margin-right: 5px;
-        position: inherit !important;
-    }
-}
-
-.portlet-ampliat {
-    .content-noticies {
-        padding: 0 !important;
-    }
-
-    h3 {
-        padding: 0 !important;
-    }
-
-    li > img {
-        margin-left: 0px !important;
-    }
-}
-
-.list-portlet {
-    padding: 0 !important;
-}
-
-.portlet-esdeveniments ul li {
-    margin: 0;
-}
-
-.portlet-noticies.portlet-ampliat > div.row-fluid {
-    border-bottom: 1px solid #b2b2b2;
-}
-
-.noticies-full-2cols {
-    .noticies-full {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
-
-.portlet-esdeveniments ul {
-    a {
-        border-left-width: 0px !important;
-    }
-    time {
-        left: 0 !important;
-    }
-}
-
-// ***** fi portlets *****
-
 
 #portal-header {
     border-bottom: 0 !important;
@@ -87,43 +17,11 @@ body {
     }
 }
 
-#portal-globalnav {
-    .navbar {
-        .nav > li, .contentViews > li, .configlets > li, .formTabs > li {
-            background-color: #fff !important;
-            > a {
-                font-size: 18px !important;
-            }
-            &:first-child > a{
-                //padding-left: 0;
-            }
-        }
-        .nav > li > a {
-            border-right: 0 !important;
-        }
-    }
-
-    .navbar-inner {
-        background-color: #fff !important;
-        background-image: none !important;
-        border: 0 !important;
-        #menu-1 {
-            *:hover {
-                background-color: #fff !important;
-            }
-        }
-
-    }
-}
-
-
 
 .container{
     max-width: 1200px !important;
     width: 98% !important;
 }
-
-
 
 
 .pad {
@@ -147,21 +45,7 @@ ul.unstyled {
     margin-right: 0px !important;
 }
 
-.subnavbar {
-    .nav-list {
-        a {
-            background-color: #fff !important;
-            background-image: none !important;
-            border-top: 0 !important;
-        }
-        .active ul a, .selected ul a {
-            border-right: 0px !important;
-            &.active {
-                background-color: #fff !important;
-            }
-        }
-    }
-}
+
 
 .accordion-group {
     border-radius: 0 !important;
@@ -182,84 +66,14 @@ ul.unstyled {
 
 .titol-sigles {
     font-size: 45px;
-    //line-height: 45px;
     padding-right: 10px !important;
 }
 
 .titol-descripcio {
-    font-weight: bold;
+    
 }
 
 .titol-sigles + .titol-descripcio {
     position: relative;
     bottom: -6px;
-}
-
-@media only screen and (max-width: 768px) {
-    .titol-sigles + .titol-descripcio {
-        display:none;
-    }
-    #portal-globalnav .navbar-inner {
-        border-top: 3px solid #666;
-    }
-}
-
-
-
-@media only screen and (min-width: 769px) {
-    // menú superior, si té més de 5 opcions ocupen tot espai centrades i fins màxim 11, sino les opcions van alineades a l'esquerra
-    @mixin space-out($min, $max) {
-        @for $i from $min through $max {
-            &:first-child:nth-last-child(#{$i}),
-            &:first-child:nth-last-child(#{$i}) ~ li {
-                flex-grow: 1;
-                text-align: center;
-            }
-        }
-    }
-
-    @mixin flexbox() {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-    }
-
-    @mixin flex-flow($values) {
-      -webkit-box-flex-flow: $values;
-      -moz-box-flex-flow:  $values;
-      -webkit-flex-flow:  $values;
-      -ms-flex-flow:  $values;
-      flex-flow:  $values;
-    }
-
-    #menu-1 ul { 
-        border-top: 3px solid #666;
-        border-bottom: 3px solid #666;
-        display: flex !important;
-            @include flexbox();
-            //@include flex-flow(row);
-            width: 100%;
-        li {
-            @include space-out(6, 11);
-            border-bottom: 3px solid #007bc0; // TODO colors a partir de variables
-            margin-bottom: -3px;
-            a {
-                border-bottom-width: 0 !important;
-                padding-left: 2% !important;
-                padding-right: 2% !important;
-            }
-            &.active {
-                border-bottom-color: #004a74;// TODO colors a partir de variables
-            }
-        }
-    }
-}
-
-
-// menú lateral
-
-#portlet-navigation-tree {
-    border-width: 0px 0 1px 0;
 }

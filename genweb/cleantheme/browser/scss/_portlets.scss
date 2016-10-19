@@ -1,0 +1,64 @@
+// ****** portlets *****
+
+.portlet {
+    border: 0 !important;
+    h2 {
+        font-size: 130% !important;
+        padding: 10px 0 !important;
+    }
+}
+
+.portlet-footer {
+    background-color: #fff !important;
+    text-align: left !important;
+    padding-left: 0px !important;
+    i {
+        margin-left: -1px;
+        margin-right: 5px;
+        position: inherit !important;
+    }
+}
+
+.portlet-ampliat {
+    .content-noticies {
+        padding: 0 !important;
+    }
+
+    h3 {
+        padding: 0 !important;
+    }
+
+    li > img {
+        margin-left: 0px !important;
+    }
+}
+
+.list-portlet {
+    padding: 0 !important;
+}
+
+.portlet-esdeveniments ul li {
+    margin: 0;
+}
+
+.portlet-noticies.portlet-ampliat > div.row-fluid {
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.noticies-full-2cols {
+    .noticies-full {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.portlet-esdeveniments ul {
+    a {
+        border-left-width: 0px !important;
+    }
+    time {
+        left: 0 !important;
+    }
+}
+
+// ***** fi portlets *****

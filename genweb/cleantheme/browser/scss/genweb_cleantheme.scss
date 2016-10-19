@@ -1,1 +1,17 @@
+@charset "UTF-8";
+
 @import "_main.scss";
+@import "_nav.scss";
+@import "_portlets.scss";
+
+@media only screen and (max-width: 768px) {
+	@import "mobile/_main.scss";
+	@import "mobile/_nav.scss";
+	@import "mobile/_portlets.scss";
+}
+
+@media only screen and (min-width: 769px) {
+	@import "desktop/_main.scss";
+	@import "desktop/_nav.scss";
+	@import "desktop/_portlets.scss";	
+}
