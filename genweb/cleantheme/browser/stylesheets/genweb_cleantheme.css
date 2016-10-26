@@ -272,8 +272,19 @@ ul.unstyled li.multidate {
     padding-left: 2% !important;
     padding-right: 2% !important;
   }
+  /* line 4, ../scss/desktop/_nav.scss */
+  #menu-1 ul li:first-child:nth-last-child(12), #menu-1 ul li:first-child:nth-last-child(12) ~ li {
+    flex-grow: 1;
+    text-align: center;
+  }
+  /* line 8, ../scss/desktop/_nav.scss */
+  #menu-1 ul li:first-child:nth-last-child(12) a, #menu-1 ul li:first-child:nth-last-child(12) ~ li a {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
   /* line 42, ../scss/desktop/_nav.scss */
   #menu-1 ul li a {
-    border-bottom-width: 0 !important;
+    border-bottom-width: 3px !important;
+    margin-bottom: -3px;
   }
 }

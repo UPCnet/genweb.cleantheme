@@ -22,7 +22,7 @@
 }
 
 @mixin flex-flow($values) {
-  -webkit-box-flex-flow: $values;
+  -webkit-box-flex-flow: $values; 
   -moz-box-flex-flow:  $values;
   -webkit-flex-flow:  $values;
   -ms-flex-flow:  $values;
@@ -36,11 +36,12 @@
     @include flexbox();
     width: 100%;
     li {
-        @include space-out(6, 11);
+        @include space-out(6, 12);
         border-bottom: 3px solid;
         margin-bottom: -3px;
         a {
-            border-bottom-width: 0 !important;
+            border-bottom-width: 3px !important;
+            margin-bottom: -3px; 
         }
     }
 }
