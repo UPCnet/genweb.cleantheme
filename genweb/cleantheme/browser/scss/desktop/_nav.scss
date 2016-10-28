@@ -1,4 +1,4 @@
-// menú superior, si té més de 5 opcions ocupen tot espai centrades i fins màxim 11, sino les opcions van alineades a l'esquerra
+// menú superior, si té més de 5 opcions ocupen tot espai centrades i fins màxim 12, sino les opcions van alineades a l'esquerra
 @mixin space-out($min, $max) {
     @for $i from $min through $max {
         &:first-child:nth-last-child(#{$i}),
@@ -29,8 +29,10 @@
   flex-flow:  $values;
 }
 
+
+
 #menu-1 ul { 
-    border-top: 3px solid;
+    border-top: 0; // si hi ha imatge capcelera sense vora
     border-bottom: 3px solid;
     display: flex !important;
     @include flexbox();
@@ -44,4 +46,8 @@
             margin-bottom: -3px; 
         }
     }
+}
+
+#portal-header.no-image + #portal-globalnav #menu-1 ul { // si no hi ha imatge capcelera posem vora gruixada
+    border-top: 3px solid;
 }

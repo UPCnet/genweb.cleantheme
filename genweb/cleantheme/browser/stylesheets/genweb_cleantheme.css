@@ -195,9 +195,9 @@ ul.unstyled li.multidate {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 32, ../scss/desktop/_nav.scss */
+  /* line 34, ../scss/desktop/_nav.scss */
   #menu-1 ul {
-    border-top: 3px solid;
+    border-top: 0;
     border-bottom: 3px solid;
     display: flex !important;
     display: -webkit-box;
@@ -207,7 +207,7 @@ ul.unstyled li.multidate {
     display: flex;
     width: 100%;
   }
-  /* line 38, ../scss/desktop/_nav.scss */
+  /* line 40, ../scss/desktop/_nav.scss */
   #menu-1 ul li {
     border-bottom: 3px solid;
     margin-bottom: -3px;
@@ -282,9 +282,14 @@ ul.unstyled li.multidate {
     padding-left: 2% !important;
     padding-right: 2% !important;
   }
-  /* line 42, ../scss/desktop/_nav.scss */
+  /* line 44, ../scss/desktop/_nav.scss */
   #menu-1 ul li a {
     border-bottom-width: 3px !important;
     margin-bottom: -3px;
+  }
+
+  /* line 51, ../scss/desktop/_nav.scss */
+  #portal-header.no-image + #portal-globalnav #menu-1 ul {
+    border-top: 3px solid;
   }
 }
