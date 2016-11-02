@@ -84,6 +84,11 @@ ul.unstyled li.multidate {
   bottom: -6px;
 }
 
+/* line 81, ../scss/_main.scss */
+.llistatLogos a {
+  margin: 0 0.5em !important;
+}
+
 /* line 3, ../scss/_nav.scss */
 #portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
   background-color: #fff !important;
