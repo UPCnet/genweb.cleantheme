@@ -46,22 +46,23 @@ ul.unstyled {
 }
 
 
-
 .accordion-group {
     border-radius: 0 !important;
 }
 
-.carousel {
-    img {
+
+.carousel img {
         width: 1200px;
-    }
 }
 
 .carousel-inner {
     border-width: 0px !important;
 }
+
 .carousel-control {
     border-width: 0px !important;
+    margin-top: 0 !important;
+    top: calc(50% - 20px) !important;
 }
 
 .titol-sigles {
@@ -81,5 +82,3 @@ ul.unstyled {
 .llistatLogos a {
     margin: 0 0.5em !important;
 }
-
-

@@ -52,39 +52,41 @@ ul.unstyled li.multidate {
   margin-right: 0px !important;
 }
 
-/* line 50, ../scss/_main.scss */
+/* line 49, ../scss/_main.scss */
 .accordion-group {
   border-radius: 0 !important;
 }
 
-/* line 55, ../scss/_main.scss */
+/* line 54, ../scss/_main.scss */
 .carousel img {
   width: 1200px;
 }
 
-/* line 60, ../scss/_main.scss */
+/* line 58, ../scss/_main.scss */
 .carousel-inner {
   border-width: 0px !important;
 }
 
-/* line 63, ../scss/_main.scss */
+/* line 62, ../scss/_main.scss */
 .carousel-control {
   border-width: 0px !important;
+  margin-top: 0 !important;
+  top: calc(50% - 20px) !important;
 }
 
-/* line 67, ../scss/_main.scss */
+/* line 68, ../scss/_main.scss */
 .titol-sigles {
   font-size: 45px;
   padding-right: 10px !important;
 }
 
-/* line 76, ../scss/_main.scss */
+/* line 77, ../scss/_main.scss */
 .titol-sigles + .titol-descripcio {
   position: relative;
   bottom: -6px;
 }
 
-/* line 81, ../scss/_main.scss */
+/* line 82, ../scss/_main.scss */
 .llistatLogos a {
   margin: 0 0.5em !important;
 }
