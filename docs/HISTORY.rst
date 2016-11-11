@@ -1,11 +1,13 @@
 Changelog
 =========
 
-0.3 (unreleased)
+0.3 (2016-11-11)
 ----------------
 
-- Nothing changed yet.
-
+* Merge branch 'master' of github.com:UPCnet/genweb.cleantheme [oscar.albareda]
+* ignore pyc [oscar.albareda]
+* positioning carousel controls [oscar.albareda]
+* decrease spacing footer logos [oscar.albareda]
 
 0.2 (2016-10-28)
 ----------------
