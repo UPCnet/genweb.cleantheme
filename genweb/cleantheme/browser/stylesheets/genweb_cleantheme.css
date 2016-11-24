@@ -91,6 +91,23 @@ ul.unstyled li.multidate {
   margin: 0 0.5em !important;
 }
 
+/* line 89, ../scss/_main.scss */
+.full-width-container {
+  text-align: center;
+  width: 100vw;
+  margin-left: calc(-1 * ((100vw - 100%) / 2));
+}
+
+/* line 94, ../scss/_main.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 97, ../scss/_main.scss */
+table.mceToolbar {
+  overflow-x: auto !important;
+}
+
 /* line 3, ../scss/_nav.scss */
 #portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
   background-color: #fff !important;
@@ -193,6 +210,19 @@ ul.unstyled li.multidate {
 /* line 55, ../scss/_portlets.scss */
 .portlet-esdeveniments ul time {
   left: 0 !important;
+}
+
+/* line 60, ../scss/_portlets.scss */
+.portlet #loginform {
+  padding: 7px 0;
+}
+/* line 62, ../scss/_portlets.scss */
+.portlet #loginform label {
+  font-size: 14px;
+}
+/* line 65, ../scss/_portlets.scss */
+.portlet #loginform input {
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
