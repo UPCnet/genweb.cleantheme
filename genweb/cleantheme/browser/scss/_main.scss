@@ -25,7 +25,7 @@ body {
 
 
 .pad {
-    padding: 0 !important;
+    padding: 9px 0 !important;
 }
 
 ul.unstyled {
@@ -81,4 +81,20 @@ ul.unstyled {
 
 .llistatLogos a {
     margin: 0 0.5em !important;
+}
+
+
+// container que ocuparà tota la pantalla
+$full-width: 100vw;
+.full-width-container {
+    text-align: center;
+    width: $full-width;
+    margin-left: calc(-1 * ((#{$full-width} - 100%) / 2));  // amplada total viewport - amplada del container / 2
+}
+body {
+   overflow-x: hidden;} // TODO quan hi ha scroll vertical provoca scroll horitzontal!!
+
+table.mceToolbar {
+    overflow-x: auto !important;
+    
 }

@@ -30,7 +30,7 @@ body {
 
 /* line 27, ../scss/_main.scss */
 .pad {
-  padding: 0 !important;
+  padding: 9px 0 !important;
 }
 
 /* line 31, ../scss/_main.scss */
@@ -212,10 +212,6 @@ table.mceToolbar {
   left: 0 !important;
 }
 
-/* line 60, ../scss/_portlets.scss */
-.portlet #loginform {
-  padding: 7px 0;
-}
 /* line 62, ../scss/_portlets.scss */
 .portlet #loginform label {
   font-size: 14px;
