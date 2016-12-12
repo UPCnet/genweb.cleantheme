@@ -84,6 +84,15 @@ ul.unstyled {
 }
 
 
+// arrodoniment imatges
+.img-rounded {
+  @include border-radius(6px);
+}
+
+.img-circle {
+  @include border-radius(500px);
+}
+
 // container que ocuparà tota la pantalla
 $full-width: 100vw;
 .full-width-container {
@@ -98,3 +107,4 @@ table.mceToolbar {
     overflow-x: auto !important;
     
 }
+

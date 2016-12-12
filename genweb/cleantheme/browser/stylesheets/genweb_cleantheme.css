@@ -91,19 +91,33 @@ ul.unstyled li.multidate {
   margin: 0 0.5em !important;
 }
 
-/* line 89, ../scss/_main.scss */
+/* line 88, ../scss/_main.scss */
+.img-rounded {
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  border-radius: 6px !important;
+}
+
+/* line 92, ../scss/_main.scss */
+.img-circle {
+  -webkit-border-radius: 500px !important;
+  -moz-border-radius: 500px !important;
+  border-radius: 500px !important;
+}
+
+/* line 98, ../scss/_main.scss */
 .full-width-container {
   text-align: center;
   width: 100vw;
   margin-left: calc(-1 * ((100vw - 100%) / 2));
 }
 
-/* line 94, ../scss/_main.scss */
+/* line 103, ../scss/_main.scss */
 body {
   overflow-x: hidden;
 }
 
-/* line 97, ../scss/_main.scss */
+/* line 106, ../scss/_main.scss */
 table.mceToolbar {
   overflow-x: auto !important;
 }
