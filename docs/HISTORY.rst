@@ -1,11 +1,13 @@
 Changelog
 =========
 
-0.4 (unreleased)
+0.4 (2016-12-15)
 ----------------
 
-- Nothing changed yet.
-
+* add rounded images style [oscar.albareda]
+* add padding to .pad [oscar.albareda]
+* restyling login portlet [oscar.albareda]
+* removed .pyc [roberto.diaz]
 
 0.3 (2016-11-11)
 ----------------
