@@ -122,6 +122,11 @@ table.mceToolbar {
   overflow-x: auto !important;
 }
 
+/* line 112, ../scss/_main.scss */
+div.photoAlbumEntry {
+  padding: 4px 3px !important;
+}
+
 /* line 3, ../scss/_nav.scss */
 #portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
   background-color: #fff !important;
