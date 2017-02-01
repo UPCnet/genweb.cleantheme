@@ -1,10 +1,9 @@
 Changelog
 =========
 
-0.5 (unreleased)
+0.5 (2017-02-01)
 ----------------
 
-- Nothing changed yet.
 
 
 0.4 (2016-12-15)
