@@ -24,7 +24,7 @@ body {
 
 /* line 21, ../scss/_main.scss */
 .container {
-  max-width: 1200px !important;
+  max-width: 1170px !important;
   width: 98% !important;
 }
 
@@ -59,7 +59,7 @@ ul.unstyled li.multidate {
 
 /* line 54, ../scss/_main.scss */
 .carousel img {
-  width: 1200px;
+  width: 1170px;
 }
 
 /* line 58, ../scss/_main.scss */
