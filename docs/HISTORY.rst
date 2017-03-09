@@ -1,11 +1,10 @@
 Changelog
 =========
 
-0.6 (unreleased)
+0.6 (2017-03-09)
 ----------------
 
-- Nothing changed yet.
-
+* change max-width from 1200 to 1170 [oscar.albareda]
 
 0.5 (2017-02-01)
 ----------------
