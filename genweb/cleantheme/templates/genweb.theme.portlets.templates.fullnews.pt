@@ -17,8 +17,12 @@
                         </a>
                     </h3>
                     <tal:co tal:condition="python:obj.Type=='News Item'">
-                        <tal:image tal:condition="obj/news_image_filename|nothing">
-                            <img tal:attributes="src string:${obj/getURL}/@@images/image/large" alt="" class="image-noticies">
+                        <tal:image tal:condition="obj/news_image_filename|nothing"
+                                   tal:define="item obj/getObject">
+                            <img tal:attributes="src string:${obj/getURL}/@@images/image/large;
+                                                 title python: item.image_caption if item.image_caption else nothing;
+                                                 alt python: item.image_caption if item.image_caption else '';"
+                                 class="image-noticies">
                         </tal:image>
                     </tal:co>
                   <div class="content-noticies">
@@ -37,11 +41,15 @@
               <a href="" tal:attributes="href obj/getURL">
                 <div class='noticies-full'>
                   <tal:co tal:condition="python:obj.Type=='News Item'">
-                      <tal:image tal:condition="obj/news_image_filename|nothing">
-                          <img tal:attributes="src string:${obj/getURL}/@@images/image/full" alt="" class="image-noticies-full">
+                      <tal:image tal:condition="obj/news_image_filename|nothing"
+                                 tal:define="item obj/getObject">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/large;
+                                               title python: item.image_caption if item.image_caption else nothing;
+                                               alt python: item.image_caption if item.image_caption else '';"
+                               class="image-noticies-full">
                       </tal:image>
                   </tal:co>
-                </div> 
+                </div>
                 <h3>
                   <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
                 </h3>
@@ -59,16 +67,20 @@
 
         <!-- FULL 2COLS -->
         <div tal:condition="python:tipus=='id_full_2cols'" class="row-fluid">
-          <div class='span6 noticies-full-2cols' id='pair-news'>  
+          <div class='span6 noticies-full-2cols' id='pair-news'>
             <div tal:repeat="obj view/published_news_items_pair" class='noticia-full-2cols'>
               <a href="" tal:attributes="href obj/getURL">
                 <div class='noticies-full'>
                   <tal:co tal:condition="python:obj.Type=='News Item'">
-                      <tal:image tal:condition="obj/news_image_filename|nothing">
-                          <img tal:attributes="src string:${obj/getURL}/@@images/image/large" alt="" class="image-noticies-full">
+                      <tal:image tal:condition="obj/news_image_filename|nothing"
+                                 tal:define="item obj/getObject">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/large;
+                                               title python: item.image_caption if item.image_caption else nothing;
+                                               alt python: item.image_caption if item.image_caption else '';"
+                               class="image-noticies-full">
                       </tal:image>
                   </tal:co>
-                </div> 
+                </div>
                 <h3>
                   <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
                 </h3>
@@ -84,16 +96,20 @@
               </div>
             </div>
           </div>
-          <div class='span6 noticies-full-2cols' id='odd-news'>  
+          <div class='span6 noticies-full-2cols' id='odd-news'>
             <div tal:repeat="obj view/published_news_items_odd" class='noticia-full-2cols'>
               <a href="" tal:attributes="href obj/getURL">
                 <div class='noticies-full'>
                   <tal:co tal:condition="python:obj.Type=='News Item'">
-                      <tal:image tal:condition="obj/news_image_filename|nothing">
-                          <img tal:attributes="src string:${obj/getURL}/@@images/image/large" alt="" class="image-noticies-full">
+                      <tal:image tal:condition="obj/news_image_filename|nothing"
+                                 tal:define="item obj/getObject">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/large;
+                                               title python: item.image_caption if item.image_caption else nothing;
+                                               alt python: item.image_caption if item.image_caption else '';"
+                               class="image-noticies-full">
                       </tal:image>
                   </tal:co>
-                </div> 
+                </div>
                 <h3>
                   <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
                 </h3>
