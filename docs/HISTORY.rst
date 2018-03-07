@@ -1,11 +1,10 @@
 Changelog
 =========
 
-0.7 (unreleased)
+0.7 (2018-03-07)
 ----------------
 
-- Nothing changed yet.
-
+* WCAG: quitar atributo title si esta vacio y aÃ±adir alt vacio en caso de no tener - Portlet fullnews [iago.lopez]
 
 0.6 (2017-03-09)
 ----------------
