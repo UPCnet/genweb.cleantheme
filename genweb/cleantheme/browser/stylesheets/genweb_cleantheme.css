@@ -112,10 +112,11 @@ ul.unstyled li.multidate {
   margin-left: calc(-1 * ((100vw - 100%) / 2));
 }
 
-/* line 103, ../scss/_main.scss */
+/* COMENTADO POR BUG EN TABLAS Y CONTENIDOS QUE SE EXTIENDEN HORIZONTALMENTE
+/* line 103, ../scss/_main.scss
 body {
   overflow-x: hidden;
-}
+}*/
 
 /* line 106, ../scss/_main.scss */
 table.mceToolbar {
