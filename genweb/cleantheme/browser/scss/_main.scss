@@ -100,8 +100,6 @@ $full-width: 100vw;
     width: $full-width;
     margin-left: calc(-1 * ((#{$full-width} - 100%) / 2));  // amplada total viewport - amplada del container / 2
 }
-body {
-   overflow-x: hidden;} // TODO quan hi ha scroll vertical provoca scroll horitzontal!!
 
 table.mceToolbar {
     overflow-x: auto !important;
