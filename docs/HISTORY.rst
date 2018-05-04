@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.8 (unreleased)
+0.8 (2018-05-04)
 ----------------
 
-- Nothing changed yet.
-
+* Treu regla que anulava scroll horitzontal [oscar.albareda]
+* Allow horizontal scrollbar [Corina Riba]
 
 0.7 (2018-03-07)
 ----------------
