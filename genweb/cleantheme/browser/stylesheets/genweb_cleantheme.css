@@ -182,7 +182,7 @@ div.photoAlbumEntry {
   padding-left: 0px !important;
 }
 /* line 15, ../scss/_portlets.scss */
-.portlet-footer i {
+.portlet-footer i, .portlet-footer span {
   margin-left: -1px;
   margin-right: 5px;
   position: inherit !important;
