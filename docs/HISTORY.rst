@@ -1,11 +1,10 @@
 Changelog
 =========
 
-0.9 (unreleased)
+0.9 (2018-10-04)
 ----------------
 
-- Nothing changed yet.
-
+* Estilos footer portlets - RSS [iago.lopez]
 
 0.8 (2018-05-04)
 ----------------
