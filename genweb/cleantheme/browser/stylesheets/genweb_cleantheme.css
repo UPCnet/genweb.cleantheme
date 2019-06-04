@@ -235,6 +235,11 @@ div.photoAlbumEntry {
   margin-top: 5px;
 }
 
+/* line 70, ../scss/_portlets.scss */
+.portlet-grid-events .list-agenda {
+  padding: 0px;
+}
+
 @media only screen and (max-width: 768px) {
   /* line 1, ../scss/mobile/_main.scss */
   .titol-sigles + .titol-descripcio {
