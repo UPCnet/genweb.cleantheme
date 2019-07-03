@@ -1,11 +1,11 @@
 Changelog
 =========
 
-0.10 (unreleased)
+0.10 (2019-07-03)
 -----------------
 
-- Nothing changed yet.
-
+* Estilos portlet Grid events [Iago López Fernández]
+* Añadir nuevas opciones al portlet fullnews (3 y 4 columnas) [Iago López Fernández]
 
 0.9 (2018-10-04)
 ----------------
