@@ -345,3 +345,26 @@ div.photoAlbumEntry {
     border-top: 3px solid;
   }
 }
+
+@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
+
+  body #portal-globalnav .navbar .btn-navbar {
+    margin-right: 0px !important;
+  }
+  #portal-globalnav .navbar .navbar-inner #menu-1 {
+    border-bottom: 1px solid #b2b2b2 !important;
+  }
+  #portal-globalnav .navbar .navbar-inner li {
+    border-bottom: 0px solid transparent !important;
+  }
+  #portal-globalnav .navbar .navbar-inner li > a {
+    border-right: 0px solid transparent !important;
+    border-left: 0px solid transparent !important;
+    border-bottom: 0px solid transparent !important;
+    margin-right: 20px !important;
+  }
+  #portal-globalnav .navbar .navbar-inner li:first-child > a {
+    margin-right: 0px !important;
+  }
+}
+
