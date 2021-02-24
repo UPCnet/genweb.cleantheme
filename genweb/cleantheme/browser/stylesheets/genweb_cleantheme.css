@@ -361,7 +361,8 @@ div.photoAlbumEntry {
     border-right: 0px solid transparent !important;
     border-left: 0px solid transparent !important;
     border-bottom: 0px solid transparent !important;
-    margin-right: 20px !important;
+    margin-right: 0px !important;
+    margin-left: 20px !important;
   }
   #portal-globalnav .navbar .navbar-inner li:first-child > a {
     margin-right: 0px !important;
